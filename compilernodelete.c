@@ -5,14 +5,13 @@
 void build( char*, FILE* );
 
 FILE *input, *output;
-char *buffer, *bfcode = "", *cfilename, *compilercommand, *deletecfilecommand;
+char *buffer, *bfcode = "", *cfilename, *compilercommand;
 long numbytes;
 
 int main( int argc, char** argv )
 {
     compilercommand = malloc( sizeof( char ) );
     cfilename = malloc( sizeof( char ) );
-    deletecfilecommand = malloc( sizeof( char ) );
 
     //check that there are enough parameters at runtime
     if( argc < 3 )
@@ -81,13 +80,6 @@ int main( int argc, char** argv )
     strcat( compilercommand, " -o " );
     strcat( compilercommand, argv[2] );
     system( compilercommand );
-
-
-    //!this is used to delete the c file so the user doesn't bother with it
-    //TODO make a toggle for this to not be deleted
-    strcpy( deletecfilecommand, "del " );
-    strcat( deletecfilecommand, cfilename );
-    system( deletecfilecommand );
 
     //free the memory allocated to the buffer
     free( buffer );
