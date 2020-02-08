@@ -1,6 +1,6 @@
 # Brainfuck-Compiler-C
 
-
+*[changelog](https://github.com/DarkwaterKiller/Brainfuck-Compiler-C/blob/master/changelog.md)*
 
 **NOTE: This compiler requires that the user has GCC installed on their system and added to their PATH. If you do not know what that means, or you do not know how to install GCC on your system, please reference [Helpful Information](https://github.com/DarkwaterKiller/Brainfuck-Compiler-C#Helpful-Information) below.**
 
@@ -75,10 +75,11 @@ You can probably get away with running the following
 
 
 
+
 ## Other
 I've included [helloworld.bf](https://github.com/DarkwaterKiller/Brainfuck-Compiler-C/blob/master/helloworld.bf) as an example for you to use to test your system. When compiled and run, the hello world program should print out "Hello World!" to the console. (Duh)
 
-A changelog for this project can be found [here](https://github.com/DarkwaterKiller/Brainfuck-Compiler-C/blob/master/changelog.md).
+
 
 ### What is Brainfuck?
 I have no idea how you got here, but you should probably look at [this](https://en.wikipedia.org/wiki/Brainfuck).
